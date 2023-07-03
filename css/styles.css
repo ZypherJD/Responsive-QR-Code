@@ -1,0 +1,66 @@
+:root {
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    
+    /* Devices - These were not necessary */
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+    /* Font */
+    --fuentePrincipal: 'Outfit', sans-serif;
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+	background-color: var(--LightGray);
+	font-size: 15px;
+	font-family: var(--fuentePrincipal);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem;
+    margin-top: 15rem;
+}
+
+.card {
+	background-color: var(--White);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 0.625rem;
+	width: 200px;
+	padding: 0.9rem;
+	margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+p {
+	font-size: 1.15rem;
+    font-weight: 400;
+	font-family: 'Outfit', sans-serif;
+	color: hsl(218, 44%, 22%);
+	text-align: center;
+	width: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--DarkBlue); }
+
+.bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
